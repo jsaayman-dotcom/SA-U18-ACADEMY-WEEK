@@ -1,1 +1,717 @@
+/* ==========================================
+   RESET
+========================================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f4f6f8;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#062A4D;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    z-index:999;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#F4C542;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    height:100vh;
+
+    background:url("images/hero.jpg") center center/cover no-repeat;
+
+    position:relative;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    color:white;
+
+    max-width:800px;
+
+    padding:20px;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+    font-weight:800;
+
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+    line-height:1.7;
+
+}
+
+.date{
+
+    margin-top:18px;
+
+    margin-bottom:35px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    background:#F4C542;
+
+    color:#062A4D;
+
+    text-decoration:none;
+
+    padding:16px 42px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+section{
+
+    padding:90px 8%;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#062A4D;
+
+    margin-bottom:18px;
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:50px;
+
+}
+
+.welcome{
+
+    background:white;
+
+    text-align:center;
+
+}
+
+.welcome p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   FIXTURES
+========================================== */
+
+.fixture-container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.fixture-container h3{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#062A4D;
+
+}
+
+.fixture-card{
+
+    background:white;
+
+    border-radius:14px;
+
+    margin-bottom:20px;
+
+    padding:22px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.fixture-card:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.field{
+
+    color:#F4C542;
+
+    font-weight:700;
+
+}
+
+.featured{
+
+    border-left:6px solid #F4C542;
+
+}
+
+/* ==========================================
+   DAY BUTTONS
+========================================== */
+
+.day-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-bottom:40px;
+
+}
+
+.day-buttons button{
+
+    background:#062A4D;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 26px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.day-buttons button:hover{
+
+    background:#F4C542;
+
+    color:#062A4D;
+
+}
+
+.day-buttons .active{
+
+    background:#F4C542;
+
+    color:#062A4D;
+
+}
+/* ==========================================
+   TEAMS SECTION
+========================================== */
+
+.teams-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+    margin-top:50px;
+
+}
+
+.team-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+}
+
+.team-card img{
+
+    width:110px;
+
+    height:110px;
+
+    object-fit:contain;
+
+    margin-bottom:18px;
+
+}
+
+.team-card h3{
+
+    color:#062A4D;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.75);
+
+    z-index:9999;
+
+    overflow:auto;
+
+}
+
+.modal-content{
+
+    background:white;
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:60px auto;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    position:relative;
+
+}
+
+.close{
+
+    position:absolute;
+
+    right:25px;
+
+    top:20px;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+    color:#666;
+
+}
+
+.close:hover{
+
+    color:#000;
+
+}
+
+/* ==========================================
+   TEAM CONTENT
+========================================== */
+
+.team-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin-bottom:35px;
+
+}
+
+.team-header img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
+
+}
+
+.team-header h2{
+
+    color:#062A4D;
+
+}
+
+.team-section{
+
+    margin-top:30px;
+
+}
+
+.team-section h3{
+
+    margin-bottom:15px;
+
+    color:#062A4D;
+
+}
+
+.team-section ul{
+
+    list-style:none;
+
+    padding-left:0;
+
+}
+
+.team-section li{
+
+    padding:8px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+/* ==========================================
+   TOURNAMENT INFORMATION
+========================================== */
+
+#information{
+
+    background:#f8f8f8;
+
+}
+
+.info-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.info-card h3{
+
+    color:#062A4D;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================================
+   SPONSORS
+========================================== */
+
+#sponsors{
+
+    text-align:center;
+
+    background:#062A4D;
+
+    color:white;
+
+}
+
+#sponsors h2{
+
+    color:white;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#041C34;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+}
+
+.fixture-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:10px;
+
+}
+
+.team-header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.section-title{
+
+    font-size:32px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-content h1{
+
+    font-size:34px;
+
+}
+
+.button{
+
+    width:100%;
+
+}
+
+.teams-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.team-card{
+
+    padding:18px;
+
+}
+
+.team-card img{
+
+    width:80px;
+
+    height:80px;
+
+}
+
+.modal-content{
+
+    padding:25px;
+
+}
+
+}
