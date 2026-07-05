@@ -113,28 +113,46 @@ Tournament Fixtures
 
 <div class="day-buttons">
 
-<button class="active">
-
-Day 1
-
+<button class="day-btn active" onclick="showDay('day1', this)">
+    Day 1
 </button>
 
-<button>
-
-Day 2
-
+<button class="day-btn" onclick="showDay('day2', this)">
+    Day 2
 </button>
 
-<button>
-
-Day 3
-
+<button class="day-btn" onclick="showDay('day3', this)">
+    Day 3
 </button>
 
 </div>
 
 <div class="fixture-container">
 
+<div id="day1" class="fixture-day">
+  
+ </div> 
+
+  <div id="day2" class="fixture-day" style="display:none;">
+
+<h3>Day 2 • Tuesday • 07 July 2026</h3>
+
+<div class="fixture-card">
+    <h4>Games To Be Confirmed</h4>
+    <p>08:30 onwards</p>
+</div>
+
+</div>
+<div id="day3" class="fixture-day" style="display:none;">
+
+<h3>Day 3 • Thursday • 09 July 2026</h3>
+
+<div class="fixture-card">
+    <h4>Games To Be Confirmed</h4>
+    <p>08:30 onwards</p>
+</div>
+
+</div>
 <h3>
 
 Day 1 • Monday • 06 July 2026
@@ -525,9 +543,7 @@ Lions vs Eastern Province
 
         <span class="close" onclick="closeTeam()">&times;</span>
 
-        <div id="teamContent">
-
-        </div>
+        <div id="teamContent"></div>
 
     </div>
 
@@ -597,6 +613,7 @@ Lions vs Eastern Province
 
 </footer>
 
+<script src="teams.js"></script>
 <script src="script.js"></script>
 
 </body>
