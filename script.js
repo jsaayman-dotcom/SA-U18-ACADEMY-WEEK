@@ -1,25 +1,22 @@
-// ================================
+// =====================================
 // SA U18 Academy Week 2026
-// script.js
-// ================================
+// =====================================
 
-// Team popup elements
-const popup = document.getElementById("teamPopup");
-const popupTitle = document.getElementById("popupTitle");
-const popupStaff = document.getElementById("popupStaff");
-const popupPlayers = document.getElementById("popupPlayers");
+const modal = document.getElementById("teamModal");
+const teamContent = document.getElementById("teamContent");
 
-// ================================
+// =============================
 // Open Team
-// ================================
+// =============================
 
 function openTeam(teamKey) {
 
     const team = teams[teamKey];
 
-    if (!team) return;
-
-    popupTitle.textContent = team.name;
+    if (!team) {
+        alert("Team information not available yet.");
+        return;
+    }
 
     let staffHTML = "";
 
@@ -27,98 +24,80 @@ function openTeam(teamKey) {
 
         for (const role in team.staff) {
 
-            if (team.staff[role] !== "") {
+            if (team.staff[role]) {
 
                 const title = role
                     .replace(/([A-Z])/g, " $1")
-                    .replace(/^./, c => c.toUpperCase());
+                    .replace(/^./, letter => letter.toUpperCase());
 
                 staffHTML += `
-                    <p><strong>${title}:</strong> ${team.staff[role]}</p>
+                    <li><strong>${title}:</strong> ${team.staff[role]}</li>
                 `;
-
             }
-
         }
 
     }
 
-    popupStaff.innerHTML = staffHTML;
-
     let playersHTML = "";
 
-    team.players.forEach((player, index) => {
+    if (team.players) {
 
-        playersHTML += `
-            <li>${index + 1}. ${player}</li>
-        `;
+        team.players.forEach((player, index) => {
 
-    });
+            playersHTML += `
+                <li>${index + 1}. ${player}</li>
+            `;
 
-    popupPlayers.innerHTML = playersHTML;
+        });
 
-    popup.style.display = "flex";
+    }
+
+    teamContent.innerHTML = `
+
+        <div class="team-header">
+            <h2>${team.name}</h2>
+        </div>
+
+        <div class="team-section">
+            <h3>Management</h3>
+            <ul>
+                ${staffHTML}
+            </ul>
+        </div>
+
+        <div class="team-section">
+            <h3>Players</h3>
+            <ol>
+                ${playersHTML}
+            </ol>
+        </div>
+
+    `;
+
+    modal.style.display = "block";
 
 }
 
-// ================================
-// Close Popup
-// ================================
+// =============================
+// Close Team
+// =============================
 
-function closePopup() {
+function closeTeam() {
 
-    popup.style.display = "none";
+    modal.style.display = "none";
 
 }
 
+// =============================
 // Close when clicking outside
+// =============================
 
-window.onclick = function (event) {
+window.onclick = function(event) {
 
-    if (event.target === popup) {
+    if (event.target === modal) {
 
-        closePopup();
+        closeTeam();
 
     }
 
 };
-
-// ================================
-// Fixtures Tabs
-// ================================
-
-function showDay(day) {
-
-    document.querySelectorAll(".fixture-day").forEach(section => {
-
-        section.style.display = "none";
-
-    });
-
-    document.getElementById(day).style.display = "block";
-
-    document.querySelectorAll(".day-btn").forEach(btn => {
-
-        btn.classList.remove("active");
-
-    });
-
-    event.target.classList.add("active");
-
-}
-
-// ================================
-// Default
-// ================================
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const day1 = document.getElementById("day1");
-
-    if (day1) {
-
-        day1.style.display = "block";
-
-    }
-
-});
