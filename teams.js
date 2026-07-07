@@ -627,41 +627,116 @@ const teams = {
       "Tristan Van der Merwe",
       "Jacob Viki"
     ]
-  }
+  },
 
-   Namibia: {
-    name: "Namibia",
+  borderprovincial: {
+    name: "Border",
 
     staff: {
-      Manager: "Rialdo Van Wyk",
-      Coachs: "Herman Grobler, Jacobus Barnard, Ainsley Daniels",
-    
+        teamManager: "Sunil Nandkuar",
+        headCoach: "Royden Kennedy",
+        coach: "Ntando Kebe",
+        provinceRepresentative: "Anele Atwell Zita"
     },
 
     players: [
-      "Francois de Beer",
-      "Regan Blignaut",
-      "Reinhard Duvenhage",
-      "Phillip Mans",
-      "Reuben Vlok",
-      "Kwetsima Dlamini",
-      "Duran Pieterse",
-      "Janno Geyser",
-      "Tilon Baron",
-      "Caleb Africa",
-      "Brian Jacobs",
-      "David van Jaarsveld",
-      "Meyer Pretorius",
-      "Neo Ledwaba",
-      "Alex Griesel",
-      "Stiaan Theron",
-      "Esihle Mhlongo",
-      "Morne Bisset",
-      "Onyeari Didintle",
-      "Tshepang Rawida",
-      "Michael Bhuda",
-      "Kealan Cloete",
-      "Bradley Jacobs"
+        "Lithemba Mpini",
+        "Leon Muller",
+        "Bunon Dtantyi",
+        "Daniel Naude",
+        "Ntsika Boya",
+        "Iyazi Mbhele",
+        "Carlo Davids",
+        "Xhamla Nyobo",
+        "Daniel Rushmere",
+        "Mbono Gqgoboka",
+        "Yimani Matiwane",
+        "Bhongo Mxoli",
+        "Sivuyise Mnyimba",
+        "Akhona Mzamo",
+        "Mtongwana Zizibele",
+        "Bongo Nyakaza",
+        "Zearan Booysen",
+        "Hlakanipha Magenaku",
+        "Lomelelo Fotoyi",
+        "Achumile George",
+        "Sophakama Zamile",
+        "Edward Malinzi",
+        "Mtokozisi Mbambo"
     ]
-  },
+},
+
+  namibia: {
+    name: "Namibia",
+
+    staff: {
+        teamManager: "Rialdo Van Wyk",
+        headCoach: "Herman Grobler",
+        coach: "Jacobus Barnard",
+        assistantCoach: "Ainsley Daniels"
+    },
+
+    players: [
+        "Nouelle C Loubser",
+        "Mias Nieuwoudt",
+        "Ignatius Kondowa",
+        "Johann D Jankowitz",
+        "Drikus Maartens",
+        "Janco Esterhuizen",
+        "Dirkie Lochner",
+        "Armand Esterhuizen",
+        "Jannro Greeff",
+        "Kayden Louw",
+        "Henro Anthonissen",
+        "Isahiah Kazadovi",
+        "Gert Pretorius",
+        "Marius J De Villiers",
+        "Dirk Badenhorst",
+        "Cornelius Vermeulen",
+        "Willem Oosthuizen",
+        "Cashton Cloete",
+        "Hendrik Von Wielligh",
+        "Operi Katjitundu",
+        "Malan Esterhuizen",
+        "Ruan Brand",
+        "Morren Sabatha"
+    ]
+},
+
+  lionsxv: {
+    name: "Golden Lions XV",
+
+    staff: {
+        headCoach: "Barry Geel",
+        coach: "Daniel van der Merwe",
+        assistantCoach: "Prince Mhlanga",
+        assistantCoach2: "Johann Human"
+    },
+
+    players: [
+        "Cayden Streicher",
+        "Ayanda Mabaso",
+        "Rick van der Berg",
+        "Rico vd Westhuizen",
+        "Dewald du Preez",
+        "Thato Mapuru",
+        "Roche Botha",
+        "Ruann Bester",
+        "Kgotso Mazibuko",
+        "Connar Fourie",
+        "Zuan Krige",
+        "Heinrich Smith",
+        "Edwill October",
+        "Hlayisani S Mbambo",
+        "Chrisandro Flemmer",
+        "Jayden Nel",
+        "Titus M Mhlongo",
+        "Marvedi Ndomba",
+        "Thandolwenkosi Msimang",
+        "Matthys de Koker",
+        "Ray-Nathin van Kolver",
+        "Russel Mgiba",
+        "Ntsumi Twala"
+    ]
+},
 };
