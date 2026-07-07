@@ -269,7 +269,31 @@ const teams = {
       provinceRepresentative: "J Ell Slabbert"
     },
 
-    players: []
+    players: [
+      "P Moleleki",
+      "J Strander",
+      "L Kopa",
+      "J Flemming",
+      "H Langeveld",
+      "S Strauss",
+      "J Ollewagen",
+      "V Greef",
+      "L Botha",
+      "E Swartz",
+      "L Badenhorst",
+      "W Strauss",
+      "E Van Breederode",
+      "M Vries",
+      "J Luciano",
+      "C Isaacs",
+      "A Gubula",
+      "A Diamond",
+      "S Fourie",
+      "A Cofa",
+      "H Rademeyer",
+      "T Thole",
+      "R Ruiters"
+    ]
   },
     lions: {
     name: "Lions",
