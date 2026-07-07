@@ -484,7 +484,12 @@ const teams = {
   swd: {
     name: "SWD",
 
-    staff: {},
+    staff: {
+       headCoach: "",
+       Coachs: "Juan-Ben Naude, Gillmer Johnson",
+       teamManager: "Danville Swart"
+      
+    },
 
     players: [
       "Zivan Grobbelaar",
@@ -624,4 +629,39 @@ const teams = {
     ]
   }
 
+   Namibia: {
+    name: "Namibia",
+
+    staff: {
+      Manager: "Rialdo Van Wyk",
+      Coachs: "Herman Grobler, Jacobus Barnard, Ainsley Daniels",
+    
+    },
+
+    players: [
+      "Francois de Beer",
+      "Regan Blignaut",
+      "Reinhard Duvenhage",
+      "Phillip Mans",
+      "Reuben Vlok",
+      "Kwetsima Dlamini",
+      "Duran Pieterse",
+      "Janno Geyser",
+      "Tilon Baron",
+      "Caleb Africa",
+      "Brian Jacobs",
+      "David van Jaarsveld",
+      "Meyer Pretorius",
+      "Neo Ledwaba",
+      "Alex Griesel",
+      "Stiaan Theron",
+      "Esihle Mhlongo",
+      "Morne Bisset",
+      "Onyeari Didintle",
+      "Tshepang Rawida",
+      "Michael Bhuda",
+      "Kealan Cloete",
+      "Bradley Jacobs"
+    ]
+  },
 };
